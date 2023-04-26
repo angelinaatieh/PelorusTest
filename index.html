@@ -11,6 +11,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style>
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin-bottom: 0;
+  }
+
+  header p {
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 300px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 980px) {
+    .inner {
+      display: block;
+    }
+  }
+</style>
 
 	</head>
 	<body class="is-preload">
@@ -49,10 +76,13 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1 style="color: black; font-family: 'Inter', sans-serif;">Let us be your <span style="color: #498bf9;"> true north</span> </h1>
-								<p style="color: black; font-family: 'Inter', sans-serif;">Navigate your type 1 diabetes journey with ease. </p>
-								<img class="logo" src="images/phone homepage.svg" alt="Logo">
-							</header>
+  <div>
+    <h1 style="color: black; font-family: 'Inter', sans-serif;">Let us be your <span style="color: #498bf9;"> true north</span> </h1>
+    <p style="color: black; font-family: 'Inter', sans-serif;">Navigate your type 1 diabetes journey with ease. </p>
+  </div>
+  <img class="logo" src="images/phone homepage.svg" alt="Logo">
+</header>
+
 				
 									
 						</div>
