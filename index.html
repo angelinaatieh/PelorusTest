@@ -7,87 +7,6 @@
 <html>
 	<head>
 		<title>Pelorus Health</title>
-		<style>
-			$bgColor: #498bf9;
-$textHoverColor: white;
-$debug: false;
-
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
-
-.button {
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	overflow: if($debug, unset, hidden);
-	
-	text-decoration: none;
-	
-	font-family: "Inter",sans-serif;
-	font-weight: 600;
-	font-size: 2em;
-	
-	padding: 0.75em 1em;
-	
-	color: #498bf9;
-	
-	border: 0.15em solid #498bf9;
-	border-radius: calc(0.75em + 0.5em + 0.15em);
-	
-	transition: 4s;
-	
-	&:before,
-	&:after {
-		content: '';
-		position: absolute;
-		top: -1.5em;
-		
-		z-index: -1;
-		
-		width: 200%;
-		aspect-ratio: 1;
-		
-		border: if($debug, inherit, none);
-		border-radius: 40%;
-		
-		background-color: rgba($bgColor, 0.25);
-		
-		transition: 4s;
-	}
-	
-	&:before {
-		left: -80%;
-		transform: translate3d(0, 5em, 0) rotate(-340deg);
-	}
-	
-	&:after {
-		right: -80%;
-		transform: translate3d(0, 5em, 0) rotate(390deg);
-	}
-	
-	&:hover,
-	&:focus {
-		color: $textHoverColor;
-		
-		&:before,
-		&:after {
-			transform: none;
-			background-color: rgba($bgColor, 0.75);
-		}
-	}
-}
-		.header {
-        display: flex;
-        align-items: center;
-      }
-      .logo {
-        margin-left: auto;
-      }
-		</style>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -131,8 +50,9 @@ body {
 						<div class="inner">
 							<header>
 								<h1 style="color: black; font-family: 'Inter', sans-serif;">Let us be your <span style="color: #498bf9;"> true north</span> </h1>
+								<img class="logo" src="images/phone homepage.svg" alt="Logo">
+
 								<p style="color: black; font-family: 'Inter', sans-serif;">Navigate your type 1 diabetes journey with ease. </p>
-											<img class="logo" src="images/phone homepage.svg" alt="Logo">
 
 							</header>
 
