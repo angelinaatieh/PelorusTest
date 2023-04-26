@@ -3367,6 +3367,10 @@ input, select, textarea {
 
 /* Pill Button */
 
+$bgColor: #498bf9;
+$textHoverColor: white;
+$debug: false;
+
 body {
 	display: flex;
 	justify-content: center;
@@ -3382,7 +3386,7 @@ body {
 	
 	text-decoration: none;
 	
-	font-family: sans-serif;
+	font-family: "Inter",sans-serif;
 	font-weight: 600;
 	font-size: 2em;
 	
